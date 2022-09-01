@@ -33,5 +33,4 @@ class RanksUpdater
       Rank.create(user_id: user.id, rank: rank, score: user.total_score)
     end
   end
-
 end
