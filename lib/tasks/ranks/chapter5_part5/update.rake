@@ -7,7 +7,7 @@ namespace :ranks do
       Development::UsedMemoryReport.instance.write('start batch')
       Benchmark.bm 10 do |r|
         r.report 'RanksUpdater' do
-          Chapter5::RanksUpdater.new.update_all
+          Chapter5Part5::RanksUpdater.new.update_all
         end
       end
       Development::UsedMemoryReport.instance.write('end batch')
