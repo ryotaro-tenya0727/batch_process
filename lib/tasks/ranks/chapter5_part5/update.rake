@@ -1,13 +1,13 @@
 require 'objspace'
 
 namespace :ranks do
-  namespace :chapter3 do
+  namespace :chapter5_part5 do
     desc 'chapter3 ゲーム内のユーザーランキング情報を更新する'
     task update: :environment do
       Development::UsedMemoryReport.instance.write('start batch')
       Benchmark.bm 10 do |r|
         r.report 'RanksUpdater' do
-          RanksUpdater.new.update_all
+          Chapter5::RanksUpdater.new.update_all
         end
       end
       Development::UsedMemoryReport.instance.write('end batch')

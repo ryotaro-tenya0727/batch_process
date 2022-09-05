@@ -47,6 +47,8 @@ GEM
     activerecord (6.1.6.1)
       activemodel (= 6.1.6.1)
       activesupport (= 6.1.6.1)
+    activerecord-import (1.4.0)
+      activerecord (>= 4.2)
     activestorage (6.1.6.1)
       actionpack (= 6.1.6.1)
       activejob (= 6.1.6.1)
@@ -231,6 +233,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  activerecord-import
   awesome_print
   bootsnap (>= 1.4.4)
   byebug
